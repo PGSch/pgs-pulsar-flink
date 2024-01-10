@@ -44,3 +44,5 @@ services:
       /bin/bash -c
       " bin/apply-config-from-env.py conf/standalone.conf
       && bin/pulsar standalone"
+
+#some comment
