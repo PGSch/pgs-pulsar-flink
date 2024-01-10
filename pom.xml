@@ -50,7 +50,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
+      <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
 
@@ -81,7 +81,7 @@
             <path>
               <groupId>org.projectlombok</groupId>
               <artifactId>lombok</artifactId>
-              <version>1.18.22</version>
+              <version>1.18.30</version>
             </path>
           </annotationProcessorPaths>
         </configuration>
@@ -113,7 +113,7 @@
             <id>make-assembly</id>
             <phase>package</phase>
             <goals>
-              <goal>assembly</goal>
+              <goal>single</goal>
             </goals>
           </execution>
         </executions>
@@ -121,3 +121,49 @@
     </plugins>
   </build>
 </project>
+
+<!--  <build>-->
+<!--    <plugins>-->
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-compiler-plugin</artifactId>-->
+<!--        <version>3.6.0</version>-->
+<!--        <configuration>-->
+<!--          <source>11</source>-->
+<!--          <target>11</target>-->
+<!--          <annotationProcessorPaths>-->
+<!--            <path>-->
+<!--              <groupId>org.projectlombok</groupId>-->
+<!--              <artifactId>lombok</artifactId>-->
+<!--              <version>1.18.30</version>-->
+<!--            </path>-->
+<!--          </annotationProcessorPaths>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-resources-plugin</artifactId>-->
+<!--        <version>3.1.0</version>-->
+<!--      </plugin>-->
+<!--      <plugin>-->
+<!--        <artifactId>maven-assembly-plugin</artifactId>-->
+<!--        <version>3.6.0</version>-->
+<!--        <configuration>-->
+<!--          <appendAssemblyId>false</appendAssemblyId>-->
+<!--          <descriptorRefs>-->
+<!--            <descriptorRef>jar-with-dependencies</descriptorRef>-->
+<!--          </descriptorRefs>-->
+<!--        </configuration>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>make-assembly</id>-->
+<!--            <phase>package</phase>-->
+<!--            <goals>-->
+<!--              <goal>single</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
+<!--    </plugins>-->
+<!--  </build>-->
+<!--</project>-->

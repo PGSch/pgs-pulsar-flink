@@ -3,6 +3,21 @@
 </p>
 
 
+# SOP
+1. docker-compose up
+2. ./setup.sh
+3. LookupDataProducer
+   * Stop app manually after some time. Something like this should be returned:
+   ```Java
+   16:49:53.072 INFO [Thread-0] io.ipolyzos.producers.LookupDataProducer - Sent '117178' user records and '2198' item records. 
+   ```
+   * Data is in Pulsar
+4. ./deploy.sh
+5. EnrichmentStream 
+6. OrdersDataSource
+5. localhost:8081
+6. 
+
 WIP:
 - [ ] Optimize to backpressure, buffers, checkpoint intervals and wm intervals for larger state 
 - [ ] User RocksDB API to demonstrate what gets written and how

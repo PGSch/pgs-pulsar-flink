@@ -6,7 +6,7 @@ docker cp \
 
 # To run v1 of the code
 docker exec -it pulsar-flink-stateful-streams-taskmanager-1 ./bin/flink run \
---class io.ipolyzos.compute.v1.EnrichmentStream \
+--class io.ipolyzos.compute.v2.EnrichmentStream \
   job.jar
 
 # To run v2 of the code
